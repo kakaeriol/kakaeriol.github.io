@@ -23,7 +23,6 @@
 
     <nav class="menu" aria-label="Site navigation">
       <a href="#about">About</a>
-      <a href="#news">News</a>
       <a href="#research">Research</a>
       <a href="#publications">Publications</a>
       <a href="#experience">Experience</a>
@@ -76,28 +75,20 @@
       </ul>
     </section>
 
-    <section id="news">
-      <h2>Recent News</h2>
-      <ul class="news">
-        <li><span class="date">2025</span> Our paper <em>Incentivizing Time-Aware Fairness in Data Sharing</em> was accepted at <strong>NeurIPS 2025</strong>.</li>
-        <li><span class="date">2025</span> Our paper <em>DUPRE: Data Utility Prediction for Efficient Data Valuation</em> was accepted at <strong>AAMAS 2025</strong>.</li>
-        <li><span class="date">2025</span> Teaching Assistant for <strong>CS2109S</strong> Introduction to AI and Machine Learning at NUS.</li>
-      </ul>
-    </section>
 
     <section id="research">
       <h2>Research in Progress</h2>
-      <ul class="entries">
+      <ul class="box-list">
         <li>
-          <h3>Shapley-Guided Interaction-Aware Data Selection for LLM Pretraining</h3>
+          <strong>Shapley-Guided Interaction-Aware Data Selection for LLM Pretraining</strong>
           <p>Model-aware data selection using in-run approximations of Data Shapley values that capture both model state and within-batch interactions, enabling a lightweight scorer to dynamically rank large pretraining corpora for curriculum-style data curation under compute constraints.</p>
         </li>
         <li>
-          <h3>Modality Value Estimation for Vision-Language Models</h3>
+          <strong>Modality Value Estimation for Vision-Language Models</strong>
           <p>A modality valuation framework that quantifies the marginal and interaction contributions of vision and language at the data-point level. These signals guide synthetic data generation and targeted augmentation, improving robustness and downstream performance of multimodal models.</p>
         </li>
         <li>
-          <h3>Dynamic Data Valuation for Collaborative Retrieval Systems (GraphRAG)</h3>
+          <strong>Dynamic Data Valuation for Collaborative Retrieval Systems (GraphRAG)</strong>
           <p>A graph-based framework that models retrieved evidence as a time-evolving graph and estimates node- and provider-level contributions with Shapley-based methods, enabling fair attribution and credit assignment in multi-provider RAG systems.</p>
         </li>
       </ul>
@@ -105,85 +96,71 @@
 
     <section id="publications">
       <h2>Publications</h2>
-
-      <h3 class="topic">[Data Valuation &amp; Collaborative ML]</h3>
-      <ul class="pubs">
+      <ul class="pub-list">
         <li>
-          <span class="venue">NeurIPS'25</span>
-          <span class="title">Incentivizing Time-Aware Fairness in Data Sharing.</span>
-          Jiangwei Chen, <span class="me">Nguyen Pham</span>, Rachael Hwee Ling Sim, Arun Verma, Zhaoxuan Wu, Chuan-Sheng Foo, Bryan Kian Hsiang Low.
-          In <em>Advances in Neural Information Processing Systems</em>, 2025.
+          <span class="venue">NeurIPS 2025</span>
+          <span class="pub-title">Incentivizing Time-Aware Fairness in Data Sharing</span>
+          <span class="authors">Jiangwei Chen, <strong>Nguyen Pham</strong>, Rachael Hwee Ling Sim, Arun Verma, Zhaoxuan Wu, Chuan-Sheng Foo, Bryan Kian Hsiang Low</span>
         </li>
         <li>
-          <span class="venue">AAMAS'25</span>
-          <span class="title">DUPRE: Data Utility Prediction for Efficient Data Valuation.</span>
-          <span class="me">Nguyen Pham</span>, Rachael Hwee Ling Sim, Quoc Phong Nguyen, See-Kiong Ng, Bryan Kian Hsiang Low.
-          In <em>Proceedings of the International Conference on Autonomous Agents and Multiagent Systems</em>, 2025.
-        </li>
-      </ul>
-
-      <h3 class="topic">[Distributed &amp; Cluster Systems]</h3>
-      <ul class="pubs">
-        <li>
-          <span class="venue">IEEE TSC'21</span>
-          <span class="title">Holistic VM Placement for Distributed Parallel Applications in Heterogeneous Clusters.</span>
-          Seontae Kim, <span class="me">Nguyen Pham</span>, Woongki Baek, Young-ri Choi.
-          <em>IEEE Transactions on Services Computing</em>, 14(5):1411–1425, 2021.
+          <span class="venue">AAMAS 2025</span>
+          <span class="pub-title">DUPRE: Data Utility Prediction for Efficient Data Valuation</span>
+          <span class="authors"><strong>Nguyen Pham</strong>, Rachael Hwee Ling Sim, Quoc Phong Nguyen, See-Kiong Ng, Bryan Kian Hsiang Low</span>
         </li>
         <li>
-          <span class="venue">ICDCS'17</span>
-          <span class="title">Machine-Learning-Based Performance Estimation for Distributed Parallel Applications in Virtualized Heterogeneous Clusters.</span>
-          Seontae Kim, <span class="me">Nguyen Pham</span>, Woongki Baek, Young-ri Choi.
-          In <em>IEEE International Conference on Distributed Computing Systems</em> (poster), 2017.
+          <span class="venue">IEEE TSC 2021</span>
+          <span class="pub-title">Holistic VM Placement for Distributed Parallel Applications in Heterogeneous Clusters</span>
+          <span class="authors">Seontae Kim, <strong>Nguyen Pham</strong>, Woongki Baek, Young-ri Choi — IEEE Transactions on Services Computing, 14(5):1411–1425</span>
         </li>
-      </ul>
-
-      <h3 class="topic">[Computer Vision]</h3>
-      <ul class="pubs">
         <li>
-          <span class="venue">KSE'17</span>
-          <span class="title">Vietnamese Food Recognition Using Convolutional Neural Networks.</span>
-          Phat Thai, Tien Dang, Quang Pham, <span class="me">Nguyen Pham</span>, Binh Nguyen.
-          In <em>International Conference on Knowledge and Systems Engineering</em>, 2017.
+          <span class="venue">ICDCS 2017</span>
+          <span class="pub-title">Machine-Learning-Based Performance Estimation for Distributed Parallel Applications in Virtualized Heterogeneous Clusters</span>
+          <span class="authors">Seontae Kim, <strong>Nguyen Pham</strong>, Woongki Baek, Young-ri Choi (poster)</span>
+        </li>
+        <li>
+          <span class="venue">KSE 2017</span>
+          <span class="pub-title">Vietnamese Food Recognition Using Convolutional Neural Networks</span>
+          <span class="authors">Phat Thai, Tien Dang, Quang Pham, <strong>Nguyen Pham</strong>, Binh Nguyen</span>
         </li>
       </ul>
     </section>
 
     <section id="experience">
-      <h2>Industry Experience</h2>
-      <ul class="timeline">
-        <li>
-          <span class="date">2021 – 2022</span>
-          <div>
-            <strong>Geniebook</strong>, Singapore<br />
-            <em>Data Scientist</em> — built ETL and feature-engineering pipelines on the company-wide data platform;
-            developed automated grading, question generation and answer evaluation models for personalized learning;
-            automated real-time KPI reporting.
+      <h2>Experience</h2>
+      <div class="xp-timeline">
+        <div class="xp-item">
+          <div class="xp-date">2021 – 2022</div>
+          <div class="xp-body">
+            <h3>Data Scientist — Geniebook</h3>
+            <ul>
+              <li>Helped design and scale the company-wide data platform with the Data Engineering team.</li>
+              <li>Built ETL workflows and feature engineering pipelines powering downstream ML and analytics.</li>
+              <li>Developed automated grading, question generation, and answer evaluation models for personalized learning.</li>
+              <li>Automated financial analytics and reporting for real-time KPI monitoring.</li>
+            </ul>
+            <div class="tags"><span>Spark</span><span>PySpark</span><span>Python</span><span>Pandas</span><span>NumPy</span></div>
           </div>
-        </li>
-        <li>
-          <span class="date">2020 – 2021</span>
-          <div>
-            <strong>Trusting Social</strong><br />
-            <em>Junior Data Scientist</em> — owned production credit-scoring workflows across Indonesia, India and the Philippines;
-            led income prediction with XGBoost classification and quantile regression; developed location-aware features.
+        </div>
+        <div class="xp-item">
+          <div class="xp-date">2018 – 2021</div>
+          <div class="xp-body">
+            <h3>Junior Data Scientist &amp; Research Engineer — Trusting Social</h3>
+            <ul>
+              <li>Owned production credit-scoring workflows across Indonesia, India, and the Philippines.</li>
+              <li>Led income-prediction initiatives using XGBoost classification and quantile regression for risk segmentation and credit limits.</li>
+              <li>Developed and validated location-aware features for income prediction and credit scoring.</li>
+              <li>Built an end-to-end monitoring pipeline to detect abnormal product operations and speed up root-cause analysis.</li>
+            </ul>
+            <div class="tags"><span>Spark</span><span>PySpark</span><span>Python</span><span>XGBoost</span></div>
           </div>
-        </li>
-        <li>
-          <span class="date">2018 – 2020</span>
-          <div>
-            <strong>Trusting Social</strong><br />
-            <em>Research Engineer</em> — built an end-to-end monitoring pipeline for detecting abnormal product operations;
-            led data acquisition and processing for credit-scoring and income-prediction models using social-data features.
-          </div>
-        </li>
-      </ul>
+        </div>
+      </div>
 
-      <h2 class="sub">Teaching</h2>
-      <ul class="timeline">
-        <li><span class="date">2025</span><div><strong>National University of Singapore</strong> — CS2109S Introduction to AI and Machine Learning</div></li>
-        <li><span class="date">2016 – 2018</span><div><strong>UNIST</strong>, Korea — Introduction to Programming; Operating Systems</div></li>
-        <li><span class="date">2011 – 2016</span><div><strong>University of Science</strong>, Ho Chi Minh City — Object-Oriented Programming; Discrete Mathematics; Algorithms</div></li>
+      <h3 class="subsection">Teaching</h3>
+      <ul class="box-list compact">
+        <li><strong>National University of Singapore</strong> (2025) — CS2109S Introduction to AI and Machine Learning</li>
+        <li><strong>UNIST, Korea</strong> (2016–2018) — Introduction to Programming; Operating Systems</li>
+        <li><strong>University of Science, HCMC</strong> (2011–2016) — Object-Oriented Programming; Discrete Mathematics; Algorithms</li>
       </ul>
     </section>
 
