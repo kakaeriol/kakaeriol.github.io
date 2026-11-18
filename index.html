@@ -3,28 +3,32 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Personal website of kakaeriol" />
-  <title>kakaeriol | Personal Site</title>
+  <meta name="description" content="Nguyen Pham Kieu Thao — Ph.D. candidate at the National University of Singapore working on data-centric machine learning, data valuation, and scalable ML systems." />
+  <title>Nguyen Pham Kieu Thao | Ph.D. Candidate, NUS</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
   <!-- ===== Header / Hero ===== -->
   <header>
-    <div class="avatar" aria-hidden="true">👤</div>
-    <h1>kakaeriol</h1>
-    <p class="tagline">Developer &amp; Creator</p>
+    <div class="avatar" aria-hidden="true">NP</div>
+    <h1>Nguyen Pham Kieu Thao</h1>
+    <p class="tagline">Ph.D. Candidate in Computer Science · National University of Singapore</p>
+    <p class="subtagline">Data-centric ML · Data valuation · LLM data selection · Scalable ML systems</p>
     <div class="social-links">
+      <a href="mailto:nguyen.pkt@u.nus.edu">Email</a>
       <a href="https://github.com/kakaeriol" target="_blank" rel="noopener">GitHub</a>
-      <a href="mailto:hello@example.com">Email</a>
+      <a href="Pham_Kieu_Thao_Nguyen_cv.pdf" target="_blank" rel="noopener">CV (PDF)</a>
     </div>
   </header>
 
   <!-- ===== Navigation ===== -->
   <nav aria-label="Site navigation">
     <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
+    <a href="#research">Research</a>
+    <a href="#publications">Publications</a>
+    <a href="#experience">Experience</a>
+    <a href="#education">Education</a>
     <a href="#contact">Contact</a>
   </nav>
 
@@ -35,45 +39,197 @@
     <section id="about">
       <h2>About Me</h2>
       <p>
-        Hi there! I'm <strong>kakaeriol</strong>, a developer who loves building things for
-        the web. I enjoy turning ideas into reality through clean code and thoughtful design.
-        Welcome to my corner of the internet — feel free to explore my work and reach out!
+        I'm a Ph.D. candidate at the <strong>National University of Singapore</strong>, advised by
+        Professor Bryan Kian Hsiang Low, working at the intersection of <strong>data-centric machine
+        learning</strong> and <strong>large-scale systems</strong>. My research focuses on data valuation,
+        data selection, and uncertainty-aware modeling to make training large models more efficient and reliable.
       </p>
+      <p>
+        I have a strong foundation in distributed systems, including two years of research on scheduling and
+        optimization for HPC cluster workloads during my Master's at UNIST. I also bring
+        <strong>3+ years of industry experience</strong> building scalable, end-to-end ML systems in fintech,
+        including production pipelines for credit scoring and large-scale data processing.
+      </p>
+    </section>
+
+    <!-- Research Focus -->
+    <section id="research">
+      <h2>Research Focus</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>Data Valuation &amp; Data-Centric Learning</h3>
+          <p>Scalable approximations of Shapley values and influence estimation for efficient data valuation in large-scale model training, with a focus on uncertainty-aware utility prediction.</p>
+        </div>
+        <div class="project-card">
+          <h3>Data Selection for LLM Pretraining</h3>
+          <p>Shapley-guided data selection and sampling-fraction allocation to optimize large-scale data mixtures under compute constraints.</p>
+        </div>
+        <div class="project-card">
+          <h3>Collaborative &amp; Data Marketplace ML</h3>
+          <p>Incentive mechanisms, fairness, and robust utility estimation in multi-agent data sharing and collaborative learning.</p>
+        </div>
+        <div class="project-card">
+          <h3>Scalable, Theory-Driven ML Systems</h3>
+          <p>Turning theoretical models — game-theoretic valuation, uncertainty estimation — into production-scale pipelines and distributed training workflows (Spark, PySpark, SQL).</p>
+        </div>
+      </div>
+
+      <h3 class="subsection">Research in Progress</h3>
+      <ul class="item-list">
+        <li>
+          <strong>Modality Value Estimation for Vision-Language Models</strong>
+          <p>A modality valuation framework that quantifies the marginal and interaction contributions of vision and language at the data-point level, guiding synthetic data generation and targeted augmentation for more robust multimodal models.</p>
+        </li>
+        <li>
+          <strong>Shapley-Guided Interaction-Aware Data Selection for LLM Pretraining</strong>
+          <p>Model-aware data selection using in-run approximations of Data Shapley values that capture model state and within-batch interactions, enabling a lightweight scorer to dynamically rank large pretraining corpora for curriculum-style data curation.</p>
+        </li>
+        <li>
+          <strong>Dynamic Data Valuation for Collaborative Retrieval Systems (GraphRAG)</strong>
+          <p>A graph-based framework that models retrieved evidence as a time-evolving graph and estimates node- and provider-level contributions with Shapley-based methods, enabling fair attribution in multi-provider RAG systems.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Publications -->
+    <section id="publications">
+      <h2>Publications</h2>
+      <ul class="pub-list">
+        <li>
+          <span class="venue">NeurIPS 2025</span>
+          <span class="pub-title">Incentivizing Time-Aware Fairness in Data Sharing</span>
+          <span class="authors">Jiangwei Chen, <strong>Nguyen Pham</strong>, Rachael Hwee Ling Sim, Arun Verma, Zhaoxuan Wu, Chuan-Sheng Foo, Bryan Kian Hsiang Low</span>
+        </li>
+        <li>
+          <span class="venue">AAMAS 2025</span>
+          <span class="pub-title">DUPRE: Data Utility Prediction for Efficient Data Valuation</span>
+          <span class="authors"><strong>Nguyen Pham</strong>, Rachael Hwee Ling Sim, Quoc Phong Nguyen, See-Kiong Ng, Bryan Kian Hsiang Low</span>
+        </li>
+        <li>
+          <span class="venue">IEEE TSC 2021</span>
+          <span class="pub-title">Holistic VM Placement for Distributed Parallel Applications in Heterogeneous Clusters</span>
+          <span class="authors">Seontae Kim, <strong>Nguyen Pham</strong>, Woongki Baek, Young-ri Choi — IEEE Transactions on Services Computing, 14(5):1411–1425</span>
+        </li>
+        <li>
+          <span class="venue">ICDCS 2017</span>
+          <span class="pub-title">Machine-Learning-Based Performance Estimation for Distributed Parallel Applications in Virtualized Heterogeneous Clusters</span>
+          <span class="authors">Seontae Kim, <strong>Nguyen Pham</strong>, Woongki Baek, Young-ri Choi (poster)</span>
+        </li>
+        <li>
+          <span class="venue">KSE 2017</span>
+          <span class="pub-title">Vietnamese Food Recognition Using Convolutional Neural Networks</span>
+          <span class="authors">Phat Thai, Tien Dang, Quang Pham, <strong>Nguyen Pham</strong>, Binh Nguyen</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience">
+      <h2>Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-date">2026</div>
+          <div class="timeline-body">
+            <h3>AI/ML Technical Consultant — Legal AI Platform for KPMG</h3>
+            <ul>
+              <li>Led design and development of an AI-powered legal and tax research platform built on LLMs and Retrieval-Augmented Generation.</li>
+              <li>Architected end-to-end pipelines for document processing, semantic search, knowledge retrieval, and LLM-based reasoning.</li>
+              <li>Built scalable backend services and cloud infrastructure on GCP (Vertex AI, Cloud Storage, databases).</li>
+              <li>Coordinated AI, backend, frontend, and data engineering teams to turn business requirements into technical solutions.</li>
+            </ul>
+            <div class="tags"><span>LLMs</span><span>RAG</span><span>Gemini</span><span>Vertex AI</span><span>GCP</span><span>Python</span></div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">2021 – 2022</div>
+          <div class="timeline-body">
+            <h3>Data Scientist — Geniebook</h3>
+            <ul>
+              <li>Helped design and scale the company-wide data platform with the Data Engineering team.</li>
+              <li>Built ETL workflows and feature engineering pipelines powering downstream ML and analytics.</li>
+              <li>Developed automated grading, question generation, and answer evaluation models for personalized learning.</li>
+              <li>Automated financial analytics and reporting for real-time KPI monitoring.</li>
+            </ul>
+            <div class="tags"><span>Spark</span><span>PySpark</span><span>Python</span><span>Pandas</span><span>NumPy</span></div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">2018 – 2021</div>
+          <div class="timeline-body">
+            <h3>Junior Data Scientist &amp; Research Engineer — Trusting Social</h3>
+            <ul>
+              <li>Owned production credit-scoring workflows across Indonesia, India, and the Philippines.</li>
+              <li>Led income-prediction initiatives using XGBoost classification and quantile regression for risk segmentation and credit limits.</li>
+              <li>Developed and validated location-aware features for income prediction and credit scoring.</li>
+              <li>Built an end-to-end monitoring pipeline to detect abnormal product operations and speed up root-cause analysis.</li>
+            </ul>
+            <div class="tags"><span>Spark</span><span>PySpark</span><span>Python</span><span>XGBoost</span></div>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="subsection">Teaching</h3>
+      <ul class="item-list compact">
+        <li><strong>National University of Singapore</strong> (2025) — CS2109S Introduction to AI and Machine Learning</li>
+        <li><strong>UNIST, Korea</strong> (2016–2018) — Introduction to Programming; Operating Systems</li>
+        <li><strong>University of Science, HCMC</strong> (2011–2016) — Object-Oriented Programming; Discrete Mathematics; Algorithms</li>
+      </ul>
+    </section>
+
+    <!-- Education -->
+    <section id="education">
+      <h2>Education</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-date">2022 – present</div>
+          <div class="timeline-body">
+            <h3>Ph.D. in Computer Science — National University of Singapore</h3>
+            <p>Group of Learning and Optimization Working in AI (GLOW.AI) · Advisor: Prof. Bryan Kian Hsiang Low</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">2018</div>
+          <div class="timeline-body">
+            <h3>M.S. in Electrical and Computer Engineering — UNIST, Korea</h3>
+            <p>Big Data and Software System Lab · Advisor: Prof. Young-ri Choi</p>
+            <p>Thesis: <em>Data Locality Optimization on Resource-Shared Clusters</em></p>
+            <p>GPA 4.04/4.3 — Top 3 in department</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">2015</div>
+          <div class="timeline-body">
+            <h3>B.S. in Mathematics and Computer Science (Honor Program) — University of Science, Vietnam</h3>
+            <p>Intelligent Computing &amp; Image Processing Lab · Advisor: Prof. Pham The Bao</p>
+            <p>Thesis: <em>Image Segmentation using Parallel Computing in CUDA</em></p>
+            <p>GPA 8.83/10 — Top 10 in university</p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Skills -->
     <section id="skills">
       <h2>Skills</h2>
       <div class="skills-grid">
-        <span class="skill-tag">HTML</span>
-        <span class="skill-tag">CSS</span>
-        <span class="skill-tag">JavaScript</span>
-        <span class="skill-tag">Git</span>
-        <span class="skill-tag">GitHub Pages</span>
-      </div>
-    </section>
-
-    <!-- Projects -->
-    <section id="projects">
-      <h2>Projects</h2>
-      <div class="projects-grid">
-        <div class="project-card">
-          <h3>Personal Website</h3>
-          <p>This very site — built with plain HTML and CSS and hosted on GitHub Pages.</p>
-          <a href="https://github.com/kakaeriol/kakaeriol.github.io" target="_blank" rel="noopener">View on GitHub →</a>
-        </div>
-        <div class="project-card">
-          <h3>More Coming Soon</h3>
-          <p>I'm actively working on new projects. Stay tuned for updates!</p>
-        </div>
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">C++</span>
+        <span class="skill-tag">CUDA</span>
+        <span class="skill-tag">PyTorch</span>
+        <span class="skill-tag">Spark / PySpark</span>
+        <span class="skill-tag">SQL</span>
+        <span class="skill-tag">Distributed Training</span>
+        <span class="skill-tag">ETL Pipelines</span>
+        <span class="skill-tag">LLMs &amp; RAG</span>
+        <span class="skill-tag">GCP / Vertex AI</span>
       </div>
     </section>
 
     <!-- Contact -->
     <section id="contact">
       <h2>Contact</h2>
-      <p>Have a question or want to collaborate? Feel free to reach out:</p>
-      <p>📧 <a href="mailto:hello@example.com">hello@example.com</a></p>
+      <p>I'm happy to talk about research collaborations, data-centric ML, or scalable ML systems.</p>
+      <p>📧 <a href="mailto:nguyen.pkt@u.nus.edu">nguyen.pkt@u.nus.edu</a></p>
       <p>🐙 <a href="https://github.com/kakaeriol" target="_blank" rel="noopener">github.com/kakaeriol</a></p>
     </section>
 
@@ -81,7 +237,7 @@
 
   <!-- ===== Footer ===== -->
   <footer>
-    <p>&copy; 2026 kakaeriol. Built with ❤️ and hosted on GitHub Pages.</p>
+    <p>&copy; 2026 Nguyen Pham Kieu Thao · Hosted on GitHub Pages</p>
   </footer>
 
 </body>
